@@ -1,2 +1,6 @@
 @charset "UTF-8";
 
+body {
+    background-size: contain;
+    background: url('../imagens/cev-landscape.jpg') left bottom no-repeat; 
+}
