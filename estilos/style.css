@@ -1,5 +1,19 @@
 @charset "UTF-8";
 
+::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+
+:root {
+    --cor1: #2D298F;
+    --cor2: #4E2C99;
+    --cor3: #5F2D83;
+    --cor4: #892C99;
+    --cor5: #8F2977;
+    --cor6: aliceblue;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -8,8 +22,85 @@
 
 body,
 html {
+    position: relative;
     height: 100vh;
-    background: #5F2D83;
+    background-image: linear-gradient(to top, var(--cor4), var(--cor2));
+}
+
+div#bola1 {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    background-color:  var(--cor5);
+    width: 200px;
+    height: 200px;
+    border-radius: 66% 34% 62% 38% / 42% 52% 48% 58%;
+    transition: all 5s;
+    animation-duration: 40s;
+    animation-name: bola1;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+
+@keyframes bola1 {
+    from {
+        left: 30%;
+        top: -22%;
+
+    }
+
+    to {
+        left: -25%;
+        top: 50%;
+        transform: rotate(750deg);
+        background-color: var(--cor3);
+    }
+}
+
+div#bola2 {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    background-color: var(--cor3);
+    width: 200px;
+    height: 200px;
+    border-radius: 66% 34% 62% 38% / 42% 52% 48% 58%;
+    transition: all 5s;
+    animation-duration: 40s;
+    animation-name: bola2;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(15px);
+}
+
+@keyframes bola2 {
+    from {
+        left: 0%;
+        top: 110%;
+
+    }
+
+    to {
+        left: 150%;
+        top: -20%;
+        transform: rotate(700deg);
+        background-color: var(--cor5);
+    }
 }
 
 section {
@@ -18,7 +109,7 @@ section {
     top: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    background-color: aliceblue;
+    background-color: var(--cor6);
     width: 250px;
     height: 520px;
     border-radius: 20px;
@@ -26,7 +117,7 @@ section {
 }
 
 div#imagem {
-    background: purple url(/imagens/predio.jpg) left bottom no-repeat;
+    background: url(/imagens/predio.jpg) left bottom no-repeat;
     background-size: cover;
     transform: scaleX(-1);
     height: 200px;
@@ -45,8 +136,8 @@ p {
 
 div.campo {
     position: relative;
-    background-color: #5F2D83;
-    border: 2px solid #5F2D83;
+    background-color: var(--cor4);
+    border: 2px solid var(--cor4);
     display: block;
     margin: 8px 10px;
     border-radius: 8px;
@@ -55,12 +146,17 @@ div.campo {
 }
 
 input {
-    background-color: aliceblue;
+    background-color: var(--cor6);
     height: 83%;
     width: calc(100% - 50px);
     border: 0px;
     padding: 4px;
     border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+input:hover {
+    background-color: rgb(203, 210, 216);
 }
 
 i {
@@ -73,8 +169,23 @@ i {
 }
 
 .val {
+    box-sizing: border-box;
     height: 40px;
     width: calc(50% - 14px);
-    background-color: #5F2D83;
-    margin: 1px;
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    margin: 0px 1px 0px 1px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+
+.val:hover {
+    font-size: 10.5pt;
+    margin: -1px;
+    width: calc(50% - 10px);
+    height: 42px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
