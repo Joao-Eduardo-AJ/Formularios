@@ -11,8 +11,9 @@
     --cor3: #5F2D83;
     --cor4: #892C99;
     --cor5: #8F2977;
-    --cor6: aliceblue;
-    --cor7: #1C0F1F;
+    --cor6: rgb(240, 246, 252);
+    --cor7: #170c1a;
+    --cor8: #9e8fa1;
 }
 
 * {
@@ -25,7 +26,7 @@ body,
 html {
     position: relative;
     height: 100vh;
-    background-image: linear-gradient(to top, var(--cor4), var(--cor2));
+    background-color: rgb(252, 240, 255);
     overflow: hidden;
 }
 
@@ -35,27 +36,26 @@ div#bola1 {
     position: absolute;
     left: 20%;
     top: 50%;
-    background-color:  var(--cor5);
-    width: 200px;
-    height: 200px;
+    background: linear-gradient(129.3deg, var(--cor3) -15.22%, var(--cor5) 88.61%);
+    width: 300px;
+    height: 300px;
     border-radius: 66% 34% 62% 38% / 42% 52% 48% 58%;
-    transition: all 5s;
-    animation-duration: 40s;
+    animation-duration: 10s;
     animation-name: bola1;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    -webkit-filter: blur(15px);
-    -moz-filter: blur(15px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
+    -webkit-filter: blur (60px);
+    -moz-filter: blur(60px);
+    -o-filter: blur(60px);
+    -ms-filter: blur(60px);
+    filter: blur(60px);
 }
 
 @keyframes bola1 {
     from {
         left: 30%;
-        top: -22%;
+        top: -10%;
 
     }
 
@@ -63,7 +63,6 @@ div#bola1 {
         left: -25%;
         top: 50%;
         transform: rotate(750deg);
-        background-color: var(--cor3);
     }
 }
 
@@ -73,35 +72,69 @@ div#bola2 {
     position: absolute;
     left: 20%;
     top: 50%;
-    background-color: var(--cor3);
-    width: 200px;
-    height: 200px;
+    background: linear-gradient(129.3deg, var(--cor3) -15.22%, var(--cor5) 88.61%);
+    width: 300px;
+    height: 300px;
     border-radius: 66% 34% 62% 38% / 42% 52% 48% 58%;
-    transition: all 5s;
-    animation-duration: 40s;
+    animation-duration: 10s;
     animation-name: bola2;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
-    -webkit-filter: blur(15px);
-    -moz-filter: blur(15px);
-    -o-filter: blur(15px);
-    -ms-filter: blur(15px);
-    filter: blur(15px);
+    -webkit-filter: blur (60px);
+    -moz-filter: blur(60px);
+    -o-filter: blur(60px);
+    -ms-filter: blur(60px);
+    filter: blur(60px);
 }
 
 @keyframes bola2 {
     from {
         left: 0%;
-        top: 110%;
+        top: 95%;
 
     }
 
     to {
         left: 150%;
-        top: -20%;
+        top: 0%;
         transform: rotate(700deg);
-        background-color: var(--cor5);
+    }
+}
+
+div#bola3 {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    background: linear-gradient(129.3deg, var(--cor3) -15.22%, var(--cor5) 88.61%);
+    width: 300px;
+    height: 300px;
+    border-radius: 66% 34% 62% 38% / 42% 52% 48% 58%;
+    animation-duration: 10s;
+    animation-name: bola3;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    -webkit-filter: blur (60px);
+    -moz-filter: blur(60px);
+    -o-filter: blur(60px);
+    -ms-filter: blur(60px);
+    filter: blur(60px);
+}
+
+@keyframes bola3 {
+    from {
+        left: 110%;
+        top: 40%;
+
+    }
+
+    to {
+        left: -10%;
+        top: -10%;
+        transform: rotate(720deg);
     }
 }
 
@@ -112,26 +145,51 @@ section {
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: var(--cor6);
-    width: 375px;
-    height: 812px;
+    width: 300px;
+    height: 630px;
     border-radius: 32px;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 50px #892c9980;
 }
 
-div#imagem {
-    background: url(/imagens/predio.jpg) left bottom no-repeat;
+form > div > p {
+    font-size: 0.8em;
+}
+
+div#head {
+    background: linear-gradient(129.3deg, var(--cor1) -15.22%, var(--cor5) 88.61%);
     background-size: cover;
-    transform: scaleX(-1);
-    height: 200px;
-    width: 250px;
+    height: 185px;
+    width: 300;
     border-radius: 20px 20px 0px 0px;
+    position: relative;
+}
+
+div#desenho {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    background-image: linear-gradient(129.3deg, var(--cor5) -15.22%, var(--cor3) 88.61%);
+    width: 150px;
+    height: 150px;
+    border-radius: 46% 54% 70% 30% / 68% 30% 70% 32% ;
 }
 
 h1 {
     margin: 15px;
+    text-align: left;
+    color: var(--cor7);
+}
+
+p#text {
+    margin: 16px 16px 32px 16px;
+    padding: 0px;
+    color: var(--cor8);
 }
 
 p {
+    color: var(--cor7);
     text-align: justify;
     padding: 0px 10px;
 }
@@ -141,15 +199,30 @@ div.campo {
     background-color: var(--cor4);
     border: 2px solid var(--cor4);
     display: block;
-    margin: 8px 10px;
+    margin: 16px 16px;
     border-radius: 8px;
-    height: 45px;
+    height: 38px;
     text-align: right;
+}
+
+p.aux {
+    color:var(--cor8);
+    font-size: 0.8em;
+    padding: 0px;
+    margin: 16px 0px 16px 0px;
+}
+
+p > a {
+    color: #892C99;
+}
+
+a {
+    text-decoration: none;
 }
 
 input {
     background-color: var(--cor6);
-    height: 83%;
+    height: 79%;
     width: calc(100% - 50px);
     border: 0px;
     padding: 4px;
@@ -158,7 +231,7 @@ input {
 }
 
 input:hover {
-    background-color: rgb(203, 210, 216);
+    background-color: rgb(226, 233, 240);
 }
 
 i {
@@ -168,26 +241,39 @@ i {
     transform: translate(0%, -50%);
     padding: 12px;
     border-radius: 10px;
+    color: var(--cor7);
+}
+
+div#validacao > p {
+    text-align: center;
 }
 
 .val {
     box-sizing: border-box;
-    height: 40px;
-    width: calc(100% - 24px);
+    color: aliceblue;
+    width: calc(100% - 32px);
+    height: 38px;
     background: linear-gradient(129.3deg, var(--cor1) -15.22%, var(--cor5) 88.61%);
-    margin: 0px 1px 0px 1px;
+    margin: 64px 0px 0px 0px;
     border: 0px;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.2s;
 }
 
 
 
 .val:hover {
     font-size: 10.5pt;
-    margin: -1px;
-    width: calc(100% - 20px);
-    height: 42px;
+    margin: 62px 0px 0px 0px;
+    width: calc(100% - 28px);
+    height: 40px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+#npc {
+    position: absolute;
+    left: 30%;
+    top: 572px;
+    transform: translatex(-20%);
 }
