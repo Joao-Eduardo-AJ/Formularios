@@ -12,6 +12,7 @@
     --cor4: #892C99;
     --cor5: #8F2977;
     --cor6: aliceblue;
+    --cor7: #1C0F1F;
 }
 
 * {
@@ -25,6 +26,7 @@ html {
     position: relative;
     height: 100vh;
     background-image: linear-gradient(to top, var(--cor4), var(--cor2));
+    overflow: hidden;
 }
 
 div#bola1 {
@@ -110,9 +112,9 @@ section {
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: var(--cor6);
-    width: 250px;
-    height: 520px;
-    border-radius: 20px;
+    width: 375px;
+    height: 812px;
+    border-radius: 32px;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -171,8 +173,8 @@ i {
 .val {
     box-sizing: border-box;
     height: 40px;
-    width: calc(50% - 14px);
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    width: calc(100% - 24px);
+    background: linear-gradient(129.3deg, var(--cor1) -15.22%, var(--cor5) 88.61%);
     margin: 0px 1px 0px 1px;
     border: 0px;
     border-radius: 5px;
@@ -185,7 +187,7 @@ i {
 .val:hover {
     font-size: 10.5pt;
     margin: -1px;
-    width: calc(50% - 10px);
+    width: calc(100% - 20px);
     height: 42px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
