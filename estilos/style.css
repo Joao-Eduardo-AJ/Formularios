@@ -181,21 +181,21 @@ img {
 #top {
     position: absolute;
     left: 50%;
-    top: 33%;
+    top: 31%;
     transform: translate(-50%, -50%);
 }
 
 #middle {
     position: absolute;
     left: 50.16%;
-    top: 44%;
+    top: 42%;
     transform: translate(-50%, -50%);
 }
 
 #bottom {
     position: absolute;
     left: 50%;
-    top: 58%;
+    top: 56%;
     transform: translate(-50%, -50%);
 }
 
