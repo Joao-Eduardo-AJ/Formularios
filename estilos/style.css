@@ -17,7 +17,7 @@
 }
 
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -152,8 +152,8 @@ article {
     text-align: center;
     background-color: var(--cor6);
     width: 300px;
-    height: 450px;
-    border-radius: 32px;
+    height: 460px;
+    border-radius: 24px;
     box-shadow: 2px 2px 50px #892c9980;
 }
 
@@ -166,11 +166,16 @@ div#head {
     background-size: cover;
     height: 230px;
     width: 300px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 24px 24px 0px 0px;
     position: absolute;
     left: 50%;
     top: 16%;
     transform: translate(-50%, -50%);
+}
+
+img {
+    padding: 0px;
+    margin: 0px;
 }
 
 #top {
@@ -182,7 +187,7 @@ div#head {
 
 #middle {
     position: absolute;
-    left: 50%;
+    left: 50.16%;
     top: 44%;
     transform: translate(-50%, -50%);
 }
@@ -195,15 +200,16 @@ div#head {
 }
 
 h1 {
-    margin: 15px;
+    margin: 24px 24px 16px 24px;
     text-align: left;
     color: var(--cor7);
 }
 
 p#text {
-    margin: 16px 16px 32px 16px;
+    margin: 16px 24px 32px 24px;
     padding: 0px;
     color: var(--cor8);
+    text-align: left;
 }
 
 p {
@@ -217,7 +223,7 @@ div.campo {
     background-color: var(--cor4);
     border: 2px solid var(--cor4);
     display: block;
-    margin: 16px 16px;
+    margin: 16px 24px;
     border-radius: 8px;
     height: 38px;
     text-align: right;
@@ -227,7 +233,7 @@ p.aux {
     color:var(--cor8);
     font-size: 0.8em;
     padding: 0px;
-    margin: 16px 0px 16px 0px;
+    margin: 16px 24px 16px 0px;
 }
 
 p > a {
@@ -252,9 +258,9 @@ input:hover {
     background-color: rgb(226, 233, 240);
 }
 
-i {
+#i {
     position: absolute;
-    left: -1%;
+    left: 0%;
     top: 50.5%;
     transform: translate(0%, -50%);
     padding: 12px;
@@ -269,10 +275,10 @@ div#validacao > p {
 .val {
     box-sizing: border-box;
     color: aliceblue;
-    width: calc(100% - 32px);
+    width: calc(100% - 48px);
     height: 38px;
     background: linear-gradient(129.3deg, var(--cor1) -15.22%, var(--cor5) 88.61%);
-    margin: 64px 0px 0px 0px;
+    margin: 56px 24px;
     border: 0px;
     border-radius: 5px;
     cursor: pointer;
@@ -283,15 +289,17 @@ div#validacao > p {
 
 .val:hover {
     font-size: 10.5pt;
-    margin: 62px 0px 0px 0px;
-    width: calc(100% - 28px);
+    margin: 54px 0px 0px 0px;
+    width: calc(100% - 44px);
     height: 40px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 #npc {
+    margin: 0px;
     position: absolute;
-    left: 30%;
-    top: 375px;
-    transform: translatex(-20%);
+    left: 50%;
+    top: 376px;
+    transform: translatex(-50%);
+    width: 100%;
 }
