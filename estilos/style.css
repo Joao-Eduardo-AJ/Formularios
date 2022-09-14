@@ -16,8 +16,13 @@
     --cor8: #9e8fa1;
 }
 
+@font-face {
+    font-family: inter;
+    src: url('../fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
 * {
-    font-family: arial, Helvetica, sans-serif;
+    font-family: inter, Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -296,7 +301,7 @@ div#validacao > p {
     margin: 0px;
     position: absolute;
     left: 50%;
-    top: 376px;
+    top: 400px;
     transform: translatex(-50%);
     width: 100%;
 }
