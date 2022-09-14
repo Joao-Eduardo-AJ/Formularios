@@ -5,7 +5,7 @@
 Este é o projeto proposto pelo Gustavo Guanabara, e executado por mim.
 Aqui está o link para visualizar o projeto e acompanhar minha evolução!
 
-https://joao-eduardo-aj.github.io/MobileFirst/
+https://joao-eduardo-aj.github.io/LoginMQ/
 
 Obrigado pela visita!<br>
 [@LinkedIn](https://www.linkedin.com/in/joao-eduardo-2000s/) <br>
