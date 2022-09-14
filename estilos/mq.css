@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@media screen and (orientation: landscape) {
+    article {
+        background-color: aqua;
+    }
+}
