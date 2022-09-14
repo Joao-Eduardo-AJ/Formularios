@@ -22,8 +22,7 @@
     padding: 0px;
 }
 
-body,
-html {
+body, html {
     position: relative;
     height: 100vh;
     background-color: rgb(252, 240, 255);
@@ -127,13 +126,13 @@ div#bola3 {
 @keyframes bola3 {
     from {
         left: 110%;
-        top: 40%;
+        top: 35%;
 
     }
 
     to {
         left: -10%;
-        top: -10%;
+        top: -20%;
         transform: rotate(720deg);
     }
 }
