@@ -12,7 +12,7 @@
     --cor4: #892C99;
     --cor5: #8F2977;
     --cor6: rgb(240, 246, 252);
-    --cor7: #170c1a;
+    --cor7: #1C0F1F;
     --cor8: #9e8fa1;
 }
 
@@ -139,14 +139,20 @@ div#bola3 {
 }
 
 section {
+    margin: auto;
+    position: relative;
+    height: 1000px;
+}
+
+article {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 46%;
     transform: translate(-50%, -50%);
     text-align: center;
     background-color: var(--cor6);
     width: 300px;
-    height: 630px;
+    height: 450px;
     border-radius: 32px;
     box-shadow: 2px 2px 50px #892c9980;
 }
@@ -158,22 +164,34 @@ form > div > p {
 div#head {
     background: linear-gradient(129.3deg, var(--cor1) -15.22%, var(--cor5) 88.61%);
     background-size: cover;
-    height: 185px;
-    width: 300;
+    height: 230px;
+    width: 300px;
     border-radius: 20px 20px 0px 0px;
-    position: relative;
-}
-
-div#desenho {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 16%;
     transform: translate(-50%, -50%);
-    display: block;
-    background-image: linear-gradient(129.3deg, var(--cor5) -15.22%, var(--cor3) 88.61%);
-    width: 150px;
-    height: 150px;
-    border-radius: 46% 54% 70% 30% / 68% 30% 70% 32% ;
+}
+
+#top {
+    position: absolute;
+    left: 50%;
+    top: 33%;
+    transform: translate(-50%, -50%);
+}
+
+#middle {
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+}
+
+#bottom {
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -274,6 +292,6 @@ div#validacao > p {
 #npc {
     position: absolute;
     left: 30%;
-    top: 572px;
+    top: 375px;
     transform: translatex(-20%);
 }
