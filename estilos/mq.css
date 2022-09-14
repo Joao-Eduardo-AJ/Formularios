@@ -25,9 +25,9 @@
         width: 580px;
     }
     article {
-        height: 650px;
+        height: 600px;
         width: 580px;
-        top: 45%;
+        top: 42%;
     }
 
     #tilust {
@@ -40,13 +40,13 @@
         width: 170px;
     }
     #top {
-        top: 25%;
+        top: 23%;
     }
     #middle {
-        top: 36%;
+        top: 34%;
     }
     #bottom {
-        top: 50%;
+        top: 48%;
     }
 
     h1 {
@@ -95,6 +95,6 @@
 
     p#npc {
         font-size: 1.1em;
-        top: calc(79% + 16px);
+        top: calc(86% + 16px);
     }
 }       
