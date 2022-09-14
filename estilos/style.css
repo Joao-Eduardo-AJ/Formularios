@@ -40,7 +40,7 @@ div#bola1 {
     width: 300px;
     height: 300px;
     border-radius: 66% 34% 62% 38% / 42% 52% 48% 58%;
-    animation-duration: 10s;
+    animation-duration: 25s;
     animation-name: bola1;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -76,7 +76,7 @@ div#bola2 {
     width: 300px;
     height: 300px;
     border-radius: 66% 34% 62% 38% / 42% 52% 48% 58%;
-    animation-duration: 10s;
+    animation-duration: 25s;
     animation-name: bola2;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -112,7 +112,7 @@ div#bola3 {
     width: 300px;
     height: 300px;
     border-radius: 66% 34% 62% 38% / 42% 52% 48% 58%;
-    animation-duration: 10s;
+    animation-duration: 25s;
     animation-name: bola3;
     animation-iteration-count: infinite;
     animation-direction: alternate;
