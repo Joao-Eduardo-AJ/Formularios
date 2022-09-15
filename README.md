@@ -1,4 +1,4 @@
-## Menu Responsívo
+## Tela de login responsíva
 
 <img src="https://octodex.github.com/images/baracktocat.jpg" width="15%" align="right">
 
